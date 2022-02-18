@@ -1,0 +1,24 @@
+{
+    "name": "colin/contractual-obligations",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ContractualObligations\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ContractualObligations\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Colin DeCarlo",
+            "email": "colin@thedecarlos.ca"
+        }
+    ],
+    "require": {}
+}
