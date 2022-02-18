@@ -92,4 +92,12 @@ class RangeTest extends TestCase
 
         $this->assertEquals([0 => 1, 1 => 2], $actual);
     }
+
+    /** @test */
+    public function it_returns_the_size_of_the_range()
+    {
+        $range = new Range(5, 10);
+
+        $this->assertEquals(5, count($range));
+    }
 }

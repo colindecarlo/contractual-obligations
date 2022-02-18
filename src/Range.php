@@ -4,7 +4,7 @@ namespace ContractualObligations;
 
 use JetBrains\PhpStorm\Internal\TentativeType;
 
-class Range implements \Iterator
+class Range implements \Iterator, \Countable
 {
     private $current;
 
@@ -36,5 +36,10 @@ class Range implements \Iterator
     public function rewind(): void
     {
         $this->current = $this->start;
+    }
+
+    public function count(): int
+    {
+        return $this->end - $this->start;
     }
 }
